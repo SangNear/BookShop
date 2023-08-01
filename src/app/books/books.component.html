@@ -1,0 +1,10 @@
+
+<div class="p-4">
+    <h2>Programing Book List</h2>
+</div>
+
+<ul class="grid grid-cols-3 gap-8" *ngIf="isShowing">
+    <ng-container *ngFor="let singleBook of books">
+        <app-book [book]="singleBook"></app-book>
+    </ng-container>
+</ul>
